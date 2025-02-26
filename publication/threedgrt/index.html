@@ -8,8 +8,8 @@
 <link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
 <link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media=print onload="this.media='all'">
 <meta name=author content="Riccardo de Lutio">
-<meta name=description content="We introduce OmniRe, a holistic approach for efficiently reconstructing high-fidelity dynamic urban scenes from on-device logs. Recent methods for modeling driving sequences using neural radiance fields or Gaussian Splatting have demonstrated the potential of reconstructing challenging dynamic scenes, but often overlook pedestrians and other non-vehicle dynamic actors, hindering a complete pipeline for dynamic urban scene reconstruction. To that end, we propose a comprehensive 3DGS framework for driving scenes, named OmniRe, that allows for accurate, full-length reconstruction of diverse dynamic objects in a driving log. OmniRe builds dynamic neural scene graphs based on Gaussian representations and constructs multiple local canonical spaces that model various dynamic actors, including vehicles, pedestrians, and cyclists, among many others. This capability is unmatched by existing methods. OmniRe allows us to holistically reconstruct different objects present in the scene, subsequently enabling the simulation of reconstructed scenarios with all actors participating in real-time (~60Hz). Extensive evaluations on the Waymo dataset show that our approach outperforms prior state-of-the-art methods quantitatively and qualitatively by a large margin. We believe our work fills a critical gap in driving reconstruction.">
-<link rel=alternate hreflang=en-us href=https://riccardodelutio.github.io/publication/omnire/>
+<meta name=description content="Particle-based representations of radiance fields such as 3D Gaussian Splatting, have found great success for reconstructing and re-rendering of complex scenes. Most existing methods render particles via rasterization, projecting them to screen space tiles for processing in a sorted order. This work instead considers ray tracing the particles, building a bounding volume hierarchy and casting a ray for each pixel using high-performance GPU ray tracing hardware. To efficiently handle large numbers of semi-transparent particles, we describe a specialized rendering algorithm which encapsulates particles with bounding meshes to leverage fast ray-triangle intersections, and shades batches of intersections in depth-order. The benefits of ray tracing are well-known in computer graphics: processing incoherent rays for secondary lighting effects such as shadows and reflections, rendering from highly-distorted cameras common in robotics, stochastically sampling rays, and more. With our renderer, this flexibility comes at little cost compared to rasterization. Experiments demonstrate the speed and accuracy of our approach, as well as several applications in computer graphics and vision. We further propose related improvements to basic Gaussian representation, including a simple use of generalized kernel functions which significantly reduces particle hit counts.">
+<link rel=alternate hreflang=en-us href=https://riccardodelutio.github.io/publication/threedgrt/>
 <meta name=theme-color content="#1565c0">
 <link rel=stylesheet href=/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css media=print onload="this.media='all'">
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin=anonymous media=print onload="this.media='all'">
@@ -19,19 +19,19 @@
 <link rel=manifest href=/manifest.webmanifest>
 <link rel=icon type=image/png href=/media/icon_hua74a7bbaacca6c95eb1212ba4a217917_34868_32x32_fill_lanczos_center_3.png>
 <link rel=apple-touch-icon type=image/png href=/media/icon_hua74a7bbaacca6c95eb1212ba4a217917_34868_180x180_fill_lanczos_center_3.png>
-<link rel=canonical href=https://riccardodelutio.github.io/publication/omnire/>
+<link rel=canonical href=https://riccardodelutio.github.io/publication/threedgrt/>
 <meta property="twitter:card" content="summary_large_image">
 <meta property="og:site_name" content="Riccardo de Lutio">
-<meta property="og:url" content="https://riccardodelutio.github.io/publication/omnire/">
-<meta property="og:title" content="OmniRe: Omni Urban Scene Reconstruction | Riccardo de Lutio">
-<meta property="og:description" content="We introduce OmniRe, a holistic approach for efficiently reconstructing high-fidelity dynamic urban scenes from on-device logs. Recent methods for modeling driving sequences using neural radiance fields or Gaussian Splatting have demonstrated the potential of reconstructing challenging dynamic scenes, but often overlook pedestrians and other non-vehicle dynamic actors, hindering a complete pipeline for dynamic urban scene reconstruction. To that end, we propose a comprehensive 3DGS framework for driving scenes, named OmniRe, that allows for accurate, full-length reconstruction of diverse dynamic objects in a driving log. OmniRe builds dynamic neural scene graphs based on Gaussian representations and constructs multiple local canonical spaces that model various dynamic actors, including vehicles, pedestrians, and cyclists, among many others. This capability is unmatched by existing methods. OmniRe allows us to holistically reconstruct different objects present in the scene, subsequently enabling the simulation of reconstructed scenarios with all actors participating in real-time (~60Hz). Extensive evaluations on the Waymo dataset show that our approach outperforms prior state-of-the-art methods quantitatively and qualitatively by a large margin. We believe our work fills a critical gap in driving reconstruction."><meta property="og:image" content="https://riccardodelutio.github.io/publication/omnire/featured.png">
-<meta property="twitter:image" content="https://riccardodelutio.github.io/publication/omnire/featured.png"><meta property="og:locale" content="en-us">
-<meta property="article:published_time" content="2025-02-03T00:00:00+00:00">
-<meta property="article:modified_time" content="2025-02-03T00:00:00+00:00">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://riccardodelutio.github.io/publication/omnire/"},"headline":"OmniRe: Omni Urban Scene Reconstruction","image":["https://riccardodelutio.github.io/publication/omnire/featured.png"],"datePublished":"2025-02-03T00:00:00Z","dateModified":"2025-02-03T00:00:00Z","author":{"@type":"Person","name":"Ziyu Chen"},"publisher":{"@type":"Organization","name":"Riccardo de Lutio","logo":{"@type":"ImageObject","url":"https://riccardodelutio.github.io/media/icon_hua74a7bbaacca6c95eb1212ba4a217917_34868_192x192_fill_lanczos_center_3.png"}},"description":"We introduce OmniRe, a holistic approach for efficiently reconstructing high-fidelity dynamic urban scenes from on-device logs. Recent methods for modeling driving sequences using neural radiance fields or Gaussian Splatting have demonstrated the potential of reconstructing challenging dynamic scenes, but often overlook pedestrians and other non-vehicle dynamic actors, hindering a complete pipeline for dynamic urban scene reconstruction. To that end, we propose a comprehensive 3DGS framework for driving scenes, named OmniRe, that allows for accurate, full-length reconstruction of diverse dynamic objects in a driving log. OmniRe builds dynamic neural scene graphs based on Gaussian representations and constructs multiple local canonical spaces that model various dynamic actors, including vehicles, pedestrians, and cyclists, among many others. This capability is unmatched by existing methods. OmniRe allows us to holistically reconstruct different objects present in the scene, subsequently enabling the simulation of reconstructed scenarios with all actors participating in real-time (~60Hz). Extensive evaluations on the Waymo dataset show that our approach outperforms prior state-of-the-art methods quantitatively and qualitatively by a large margin. We believe our work fills a critical gap in driving reconstruction."}</script>
-<title>OmniRe: Omni Urban Scene Reconstruction | Riccardo de Lutio</title>
+<meta property="og:url" content="https://riccardodelutio.github.io/publication/threedgrt/">
+<meta property="og:title" content="3D Gaussian Ray Tracing: Fast Tracing of Particle Scenes | Riccardo de Lutio">
+<meta property="og:description" content="Particle-based representations of radiance fields such as 3D Gaussian Splatting, have found great success for reconstructing and re-rendering of complex scenes. Most existing methods render particles via rasterization, projecting them to screen space tiles for processing in a sorted order. This work instead considers ray tracing the particles, building a bounding volume hierarchy and casting a ray for each pixel using high-performance GPU ray tracing hardware. To efficiently handle large numbers of semi-transparent particles, we describe a specialized rendering algorithm which encapsulates particles with bounding meshes to leverage fast ray-triangle intersections, and shades batches of intersections in depth-order. The benefits of ray tracing are well-known in computer graphics: processing incoherent rays for secondary lighting effects such as shadows and reflections, rendering from highly-distorted cameras common in robotics, stochastically sampling rays, and more. With our renderer, this flexibility comes at little cost compared to rasterization. Experiments demonstrate the speed and accuracy of our approach, as well as several applications in computer graphics and vision. We further propose related improvements to basic Gaussian representation, including a simple use of generalized kernel functions which significantly reduces particle hit counts."><meta property="og:image" content="https://riccardodelutio.github.io/publication/threedgrt/featured.jpg">
+<meta property="twitter:image" content="https://riccardodelutio.github.io/publication/threedgrt/featured.jpg"><meta property="og:locale" content="en-us">
+<meta property="article:published_time" content="2024-12-03T00:00:00+00:00">
+<meta property="article:modified_time" content="2024-12-03T00:00:00+00:00">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://riccardodelutio.github.io/publication/threedgrt/"},"headline":"3D Gaussian Ray Tracing: Fast Tracing of Particle Scenes","image":["https://riccardodelutio.github.io/publication/threedgrt/featured.jpg"],"datePublished":"2024-12-03T00:00:00Z","dateModified":"2024-12-03T00:00:00Z","author":{"@type":"Person","name":"Nicolas Moenne-Loccoz"},"publisher":{"@type":"Organization","name":"Riccardo de Lutio","logo":{"@type":"ImageObject","url":"https://riccardodelutio.github.io/media/icon_hua74a7bbaacca6c95eb1212ba4a217917_34868_192x192_fill_lanczos_center_3.png"}},"description":"Particle-based representations of radiance fields such as 3D Gaussian Splatting, have found great success for reconstructing and re-rendering of complex scenes. Most existing methods render particles via rasterization, projecting them to screen space tiles for processing in a sorted order. This work instead considers ray tracing the particles, building a bounding volume hierarchy and casting a ray for each pixel using high-performance GPU ray tracing hardware. To efficiently handle large numbers of semi-transparent particles, we describe a specialized rendering algorithm which encapsulates particles with bounding meshes to leverage fast ray-triangle intersections, and shades batches of intersections in depth-order. The benefits of ray tracing are well-known in computer graphics: processing incoherent rays for secondary lighting effects such as shadows and reflections, rendering from highly-distorted cameras common in robotics, stochastically sampling rays, and more. With our renderer, this flexibility comes at little cost compared to rasterization. Experiments demonstrate the speed and accuracy of our approach, as well as several applications in computer graphics and vision. We further propose related improvements to basic Gaussian representation, including a simple use of generalized kernel functions which significantly reduces particle hit counts."}</script>
+<title>3D Gaussian Ray Tracing: Fast Tracing of Particle Scenes | Riccardo de Lutio</title>
 </head>
-<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=273afd27b96faf41968421df942712c6>
+<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=100e5db25a4fe2dc5a2d7f95ea19b153>
 <script src=/js/wowchemy-init.min.8f76bdc9e086322ed5147724ebba3d06.js></script>
 <aside class=search-modal id=search>
 <div class=container>
@@ -117,49 +117,43 @@
 <div class=page-body>
 <div class=pub>
 <div class="article-container pt-3">
-<h1>OmniRe: Omni Urban Scene Reconstruction</h1>
+<h1>3D Gaussian Ray Tracing: Fast Tracing of Particle Scenes</h1>
 <div class=article-metadata>
 <div>
 <span>
-Ziyu Chen</span>, <span>
-Jiawei Yang</span>, <span>
-Jiahui Huang</span>, <span class=author-highlighted>
+Nicolas Moenne-Loccoz</span><i class="author-notes fas fa-info-circle" data-toggle=tooltip title="Equal contribution"></i>, <span>
+Ashkan Mirzaei</span><i class="author-notes fas fa-info-circle" data-toggle=tooltip title="Equal contribution"></i>, <span>
+Or Perel</span>, <span class=author-highlighted>
 Riccardo de Lutio</span>, <span>
 Janick Martinez Esturo</span>, <span>
-Boris Ivanovic</span>, <span>
-Or Litany</span>, <span>
-Zan Gojcic</span>, <span>
+Gavriel State</span>, <span>
 Sanja Fidler</span>, <span>
-Marco Pavone</span>, <span>
-Li Song</span>, <span>
-Yue Wang</span>
+Nicholas Sharp</span><i class="author-notes fas fa-info-circle" data-toggle=tooltip title="Equal contribution"></i>, <span>
+Zan Gojcic</span><i class="author-notes fas fa-info-circle" data-toggle=tooltip title="Equal contribution"></i>
 </div>
 <span class=article-date>
-February 2025
+December 2024
 </span>
 </div>
 <div class="btn-links mb-3">
-<a class="btn btn-outline-primary btn-page-header" href=https://arxiv.org/pdf/2408.16760 target=_blank rel=noopener>
+<a class="btn btn-outline-primary btn-page-header" href=https://arxiv.org/pdf/2407.07090 target=_blank rel=noopener>
 PDF
 </a>
-<a href=# class="btn btn-outline-primary btn-page-header js-cite-modal" data-filename=/publication/omnire/cite.bib>
+<a href=# class="btn btn-outline-primary btn-page-header js-cite-modal" data-filename=/publication/threedgrt/cite.bib>
 Cite
 </a>
-<a class="btn btn-outline-primary btn-page-header" href=https://github.com/ziyc/drivestudio target=_blank rel=noopener>
-Code
-</a>
-<a class="btn btn-outline-primary btn-page-header" href=https://ziyc.github.io/omnire/ target=_blank rel=noopener>
+<a class="btn btn-outline-primary btn-page-header" href=https://gaussiantracer.github.io/ target=_blank rel=noopener>
 Project Page</a>
 </div>
 </div>
-<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style=max-width:720px;max-height:275px>
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style=max-width:720px;max-height:133px>
 <div style=position:relative>
-<img src=/publication/omnire/featured_hu118d0dc895b8635d6a9b3656d102fa22_1519926_720x2500_fit_q75_h2_lanczos_3.webp width=720 height=275 alt class=featured-image>
+<img src=/publication/threedgrt/featured_hue860506cb1c1a8ced4983eb02da0f130_2460037_720x2500_fit_q75_h2_lanczos.webp width=720 height=133 alt class=featured-image>
 </div>
 </div>
 <div class=article-container>
 <h3>Abstract</h3>
-<p class=pub-abstract>We introduce OmniRe, a holistic approach for efficiently reconstructing high-fidelity dynamic urban scenes from on-device logs. Recent methods for modeling driving sequences using neural radiance fields or Gaussian Splatting have demonstrated the potential of reconstructing challenging dynamic scenes, but often overlook pedestrians and other non-vehicle dynamic actors, hindering a complete pipeline for dynamic urban scene reconstruction. To that end, we propose a comprehensive 3DGS framework for driving scenes, named OmniRe, that allows for accurate, full-length reconstruction of diverse dynamic objects in a driving log. OmniRe builds dynamic neural scene graphs based on Gaussian representations and constructs multiple local canonical spaces that model various dynamic actors, including vehicles, pedestrians, and cyclists, among many others. This capability is unmatched by existing methods. OmniRe allows us to holistically reconstruct different objects present in the scene, subsequently enabling the simulation of reconstructed scenarios with all actors participating in real-time (~60Hz). Extensive evaluations on the Waymo dataset show that our approach outperforms prior state-of-the-art methods quantitatively and qualitatively by a large margin. We believe our work fills a critical gap in driving reconstruction.</p>
+<p class=pub-abstract>Particle-based representations of radiance fields such as 3D Gaussian Splatting, have found great success for reconstructing and re-rendering of complex scenes. Most existing methods render particles via rasterization, projecting them to screen space tiles for processing in a sorted order. This work instead considers ray tracing the particles, building a bounding volume hierarchy and casting a ray for each pixel using high-performance GPU ray tracing hardware. To efficiently handle large numbers of semi-transparent particles, we describe a specialized rendering algorithm which encapsulates particles with bounding meshes to leverage fast ray-triangle intersections, and shades batches of intersections in depth-order. The benefits of ray tracing are well-known in computer graphics: processing incoherent rays for secondary lighting effects such as shadows and reflections, rendering from highly-distorted cameras common in robotics, stochastically sampling rays, and more. With our renderer, this flexibility comes at little cost compared to rasterization. Experiments demonstrate the speed and accuracy of our approach, as well as several applications in computer graphics and vision. We further propose related improvements to basic Gaussian representation, including a simple use of generalized kernel functions which significantly reduces particle hit counts.</p>
 <div class=row>
 <div class=col-md-1></div>
 <div class=col-md-10>
@@ -180,7 +174,7 @@ Conference paper
 <div class=col-md-10>
 <div class=row>
 <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-<div class="col-12 col-md-9">In ICLR (Spotlight)</div>
+<div class="col-12 col-md-9">In SIGGRAPH Asia</div>
 </div>
 </div>
 <div class=col-md-1></div>
@@ -191,32 +185,32 @@ Conference paper
 <div class=share-box>
 <ul class=share>
 <li>
-<a href="https://twitter.com/intent/tweet?url=https://riccardodelutio.github.io/publication/omnire/&text=OmniRe:%20Omni%20Urban%20Scene%20Reconstruction" target=_blank rel=noopener class=share-btn-twitter aria-label=twitter>
+<a href="https://twitter.com/intent/tweet?url=https://riccardodelutio.github.io/publication/threedgrt/&text=3D%20Gaussian%20Ray%20Tracing:%20Fast%20Tracing%20of%20Particle%20Scenes" target=_blank rel=noopener class=share-btn-twitter aria-label=twitter>
 <i class="fab fa-twitter"></i>
 </a>
 </li>
 <li>
-<a href="https://www.facebook.com/sharer.php?u=https://riccardodelutio.github.io/publication/omnire/&t=OmniRe:%20Omni%20Urban%20Scene%20Reconstruction" target=_blank rel=noopener class=share-btn-facebook aria-label=facebook>
+<a href="https://www.facebook.com/sharer.php?u=https://riccardodelutio.github.io/publication/threedgrt/&t=3D%20Gaussian%20Ray%20Tracing:%20Fast%20Tracing%20of%20Particle%20Scenes" target=_blank rel=noopener class=share-btn-facebook aria-label=facebook>
 <i class="fab fa-facebook"></i>
 </a>
 </li>
 <li>
-<a href="mailto:?subject=OmniRe:%20Omni%20Urban%20Scene%20Reconstruction&body=https://riccardodelutio.github.io/publication/omnire/" target=_blank rel=noopener class=share-btn-email aria-label=envelope>
+<a href="mailto:?subject=3D%20Gaussian%20Ray%20Tracing:%20Fast%20Tracing%20of%20Particle%20Scenes&body=https://riccardodelutio.github.io/publication/threedgrt/" target=_blank rel=noopener class=share-btn-email aria-label=envelope>
 <i class="fas fa-envelope"></i>
 </a>
 </li>
 <li>
-<a href="https://www.linkedin.com/shareArticle?url=https://riccardodelutio.github.io/publication/omnire/&title=OmniRe:%20Omni%20Urban%20Scene%20Reconstruction" target=_blank rel=noopener class=share-btn-linkedin aria-label=linkedin-in>
+<a href="https://www.linkedin.com/shareArticle?url=https://riccardodelutio.github.io/publication/threedgrt/&title=3D%20Gaussian%20Ray%20Tracing:%20Fast%20Tracing%20of%20Particle%20Scenes" target=_blank rel=noopener class=share-btn-linkedin aria-label=linkedin-in>
 <i class="fab fa-linkedin-in"></i>
 </a>
 </li>
 <li>
-<a href="whatsapp://send?text=OmniRe:%20Omni%20Urban%20Scene%20Reconstruction%20https://riccardodelutio.github.io/publication/omnire/" target=_blank rel=noopener class=share-btn-whatsapp aria-label=whatsapp>
+<a href="whatsapp://send?text=3D%20Gaussian%20Ray%20Tracing:%20Fast%20Tracing%20of%20Particle%20Scenes%20https://riccardodelutio.github.io/publication/threedgrt/" target=_blank rel=noopener class=share-btn-whatsapp aria-label=whatsapp>
 <i class="fab fa-whatsapp"></i>
 </a>
 </li>
 <li>
-<a href="https://service.weibo.com/share/share.php?url=https://riccardodelutio.github.io/publication/omnire/&title=OmniRe:%20Omni%20Urban%20Scene%20Reconstruction" target=_blank rel=noopener class=share-btn-weibo aria-label=weibo>
+<a href="https://service.weibo.com/share/share.php?url=https://riccardodelutio.github.io/publication/threedgrt/&title=3D%20Gaussian%20Ray%20Tracing:%20Fast%20Tracing%20of%20Particle%20Scenes" target=_blank rel=noopener class=share-btn-weibo aria-label=weibo>
 <i class="fab fa-weibo"></i>
 </a>
 </li>
